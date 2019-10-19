@@ -6,11 +6,9 @@
 <img align="right" height='70' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/AndroguardImage.png' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 # Android Malware
+[**Android**](https://developer.android.com) is a Linux based operating system it is designed primarily for touch screen mobile devices such as smartphones and tablet computers. The operating system have developed a lot in last 15 years starting from black and white phones to recent smartphones or mini computers. One of the most widely used mobile OS these days is android. The android is software that was founded in Palo Alto of California in 2003. Android has been the best-selling OS worldwide on smartphones since 2011 and on tablets since 2013. As of May 2017, it has over 2 billion monthly active users, the largest installed base of any operating system, and as of December 2018, the Google Play store features over 2.6 million apps.
 
-
-This is an [**Android**](https://developer.android.com) project. You, as a mobile developer, can use this library to show a material about screen in your apps.
-It was built to make your life easier when introducing you to your users, and also, to create an about screen pattern for material android apps. It's really simple and dynamic, check it out.
-
+Growing popularity of Android mobile operating system has not only attracted user community but also the malware developers towards this platform. Large number of malicious apps have been detected in the past years in Google Play Store and third party app markets.
 </br>
 
 ##### Note: If you're missing some feature please let me know. Or even better, create a pull request. Also, I'm needing some help to translate the strings.xml to other languages.
