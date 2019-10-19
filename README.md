@@ -3,10 +3,10 @@
 <!-- Library Logo -->
 <img src="https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/google_android_root_0.png" align="left" hspace="1" vspace="1">
 
-<img align="right" height='70' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/AndroguardImage.png' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<img align="right" height='70' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/dims.jpeg' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
-# Android Malware
-[**Android**](https://developer.android.com) is a Linux based operating system it is designed primarily for touch screen mobile devices such as smartphones and tablet computers. The operating system have developed a lot in last 15 years starting from black and white phones to recent smartphones or mini computers. One of the most widely used mobile OS these days is android. The android is software that was founded in Palo Alto of California in 2003. Android has been the best-selling OS worldwide on smartphones since 2011 and on tablets since 2013. As of May 2017, it has over 2 billion monthly active users, the largest installed base of any operating system, and as of December 2018, the Google Play store features over 2.6 million apps.
+# Android 
+[**Android**](https://developer.android.com) is a Linux based operating system it is designed primarily for touch screen mobile devices such as smartphones and tablet computers. One of the most widely used mobile OS these days is android. The android is software that was founded in Palo Alto of California in 2003. As of May 2017, it has over 2 billion monthly active users, the largest installed base of any operating system, and as of December 2018, the Google Play store features over 2.6 million apps.
 
 Growing popularity of Android mobile operating system has not only attracted user community but also the malware developers towards this platform. Large number of malicious apps have been detected in the past years in Google Play Store and third party app markets.
 </br>
