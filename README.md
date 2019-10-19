@@ -3,7 +3,7 @@
 <!-- Library Logo -->
 <img src="https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/google_android_root_0.png" align="left" hspace="1" vspace="1">
 
-<img align="right" height='50' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/Androguard.png' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<img align="right" height='70' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/AndroguardImage.png' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 # Android Malware
 
