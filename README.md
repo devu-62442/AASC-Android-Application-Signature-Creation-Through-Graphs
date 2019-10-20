@@ -15,12 +15,11 @@ Growing popularity of Android mobile operating system has not only attracted use
 ![Python](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f6e6574776f726b782e737667-2.svg)
 ![Python](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/68747470733a2f2f7472617669732d63692e6f72672f6e6574776f726b782f6e6574776f726b782e7376673f6272616e63683d6d6173746572.svg) ![Python](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f6e6574776f726b782f6e6574776f726b783f6272616e63683d6d6173746572267376673d74727565.svg)
 </br>
-</br>
 <img align='left' height='50' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/networkx_logo_1.png' />
 <img align='right' height='30' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/logo2.png' />
-## ---Android Application Graph Signature Creator---
+## - Android Application Graph Signature Creator -
 
-<img align='center' height='60' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/Screenshot%202019-10-20%20at%209.52.48%20PM.png' />
+<img align='center' height='83' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/Screenshot%202019-10-20%20at%2010.27.53%20PM.png' />
 Applications in Android Store (or the App Store) are in billions. A user is not able to know whether it's a benign App or not. So to detect whether an Application is Benign or Malware it should be uniquely identified which are termed as signatures of the application.
 
 Android Malware are the malwares which have infected Android in many differet ways. Each malware have a different structure and executions. The malwares which behave similarly are categorised into a single Android Malware Family. 
@@ -43,50 +42,24 @@ Written in python ![Python](https://github.com/devu-62442/Android_Malware_Signat
 ```gradle
 androguard cg 'Application Name'
 ```
-A callgraph.gml is created using the above command.
+<img align='right' height='200' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/Screenshot%202019-10-20%20at%2010.31.34%20PM.png' />
+
+</br>
+A callgraph.gml is created using the above command in the same folder where application is placed.
 
 #### Step #2. Create the signature :
 Run the Signatue_Creator.py through command line. The Signatue_Creator.py is used to gather the API, using the callgraph.gml created in Step 1. The callgraphs contains around thousands of API's, from these only sensitive API's and the API's calling them are collected and represented as a directed graph. Each graph is unique for the family they belong too.
 
+```gradle
+python3 Signature_Creator.py
+```
+
+<img align='center' height='700' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/Screenshot%202019-10-20%20at%2011.11.03%20PM.png' />
 The sensitive API calls of a particular application is collected with a help of a list which contains all the sensitive API's names and is used to compare whther the API's are sensitive or not
 
 ```gradle
 sensitive_api=['TelephonyManager','SmsManager','LocationManager','AudioManager','HttpURLConnection','ConnectivityManager','BroadcastReceiver','Cipher','AccessibleObject','PackageManager']
 ```
-
-```
-# Implementation
-
-Create a [AboutView](/library/src/main/java/com/vansuita/materialabout/views/AboutView.java) instance with [AboutBuilder](/library/src/main/java/com/vansuita/materialabout/builder/AboutBuilder.java).
-```java
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-
-    AboutView view = AboutBuilder.with(this)
-                 .setPhoto(R.mipmap.profile_picture)
-                 .setCover(R.mipmap.profile_cover)
-                 .setName("Your Full Name")
-                 .setSubTitle("Mobile Developer")
-                 .setBrief("I'm warmed of mobile technologies. Ideas maker, curious and nature lover.")
-                 .setAppIcon(R.mipmap.ic_launcher)
-                 .setAppName(R.string.app_name)
-                 .addGooglePlayStoreLink("8002078663318221363")
-                 .addGitHubLink("user")
-                 .addFacebookLink("user")
-                 .addFiveStarsAction()
-                 .setVersionNameAsAppSubTitle()
-                 .addShareAction(R.string.app_name)
-                 .setWrapScrollView(true)
-                 .setLinksAnimated(true)
-                 .setShowAsCard(true)
-                 .build();
-
-    addContentView(view, layoutParams);
-}
-```
-
-
 # Additional
 
 ### Getting the list of actions or links from AboutBuilder.
