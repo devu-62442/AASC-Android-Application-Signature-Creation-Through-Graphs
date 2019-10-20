@@ -14,9 +14,13 @@ Growing popularity of Android mobile operating system has not only attracted use
 <!-- Packages Used -->
 ![Python](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f6e6574776f726b782e737667-2.svg)
 ![Python](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/68747470733a2f2f7472617669732d63692e6f72672f6e6574776f726b782f6e6574776f726b782e7376673f6272616e63683d6d6173746572.svg) ![Python](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6769746875622f6e6574776f726b782f6e6574776f726b783f6272616e63683d6d6173746572267376673d74727565.svg)
+![Networkx](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/networkx.svg)
 </br>
-<img align='left' height='50' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/networkx_logo_1.png' />
-<img align='right' height='30' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/logo2.png' />
+
+<a href='http://networkx.github.io'><img align='left' height='50' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/networkx_logo_1.png' /></a>
+
+<a href='https://matplotlib.org'><img align='right' height='30' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/logo2.png' /></a>
+
 ## - Android Application Graph Signature Creator -
 
 <img align='center' height='83' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/Screenshot%202019-10-20%20at%2010.27.53%20PM.png' />
@@ -33,7 +37,9 @@ Android is divided into a layered architecture. Application  framework  layer  i
 
 
 ## Callgraphs
+A call graph (also known as a call multigraph) is a control flow graph, which represents calling relationships between API's in an Android Application. Each node represents an API and each edge (f, g) indicates that API a calls API b. Call graphs can be dynamic or static.A dynamic call graph is a record of an execution of the Android Application. Thus, a dynamic call graph can be exact, but only describes one run of the application. A static call graph is a call graph intended to represent every possible execution of the Android Application.
 
+Call graphs can be defined to represent varying degrees of precision. A more precise call graph more precisely approximates the behavior of the real Android Application, at the cost of taking longer to compute and more memory to store. The most precise call graph is fully context-sensitive, which means that for each application, the graph contains a separate node for each call stack that application have in it
 
 ## Working
 Written in python ![Python](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f6e6574776f726b782e737667-2.svg). ```It's used to create a UNIQUE directed graph as a signature```. The tool follows the following steps :-
@@ -60,4 +66,6 @@ The sensitive API calls of a particular application is collected with a help of 
 ```gradle
 sensitive_api=['TelephonyManager','SmsManager','LocationManager','AudioManager','HttpURLConnection','ConnectivityManager','BroadcastReceiver','Cipher','AccessibleObject','PackageManager']
 ```
-
+```A graph is created, displayed on the screen and saved as Signature.gml```
+</br>
+<img align='center' height='500' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/Screenshot%202019-10-20%20at%2011.11.49%20PM.png' />
