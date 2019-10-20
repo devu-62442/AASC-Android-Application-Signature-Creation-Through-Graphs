@@ -1,4 +1,4 @@
-# Android Malware Signature Creator
+# Android Malware Family Signature Creator
 
 <!-- Library Logo -->
 <img src="https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/google_android_root_0.png" align="left" hspace="1" vspace="1">
@@ -21,9 +21,12 @@ Growing popularity of Android mobile operating system has not only attracted use
 ## ---Android Malware Family Signature Creator---
 
 <img align='center' height='60' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/Screenshot%202019-10-20%20at%207.48.32%20PM.png' />
+Android Malware are the malwares which have infected Android in many differet ways. Each malware have a different structure and execution methods. The malwares which behave similarly are categorised into a single Android Malware Family. The code is used to create signature of a particular Malware Family depending on the common sensitive API calls present in a particular MALWARE FAMILY. 
 
+## API 
+APIs are a set of functions and procedures that allow for the creation of applications that access data and features of other applications, services or operating system. APIs makes it easier to develop a computer program by providing all the building blocks, which are then put together by the programmer. With an API, you really don’t know what’s going on behind the scenes. In other words, an API is the messenger that delivers your request to the provider that you’re requesting it from and then delivers the response back to you.
 
-
+<img align='center' height='500' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/giphy.gif' />
 # Setup
 
 This library requires `minSdkVersion` to be set to `14` or above, like the [Official Support Library](https://developer.android.com/topic/libraries/support-library/index.html#api-versions).
