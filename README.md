@@ -1,4 +1,4 @@
-# Android Malware Graph Signature 
+# Android Application Graph Signature 
 
 <!-- Library Logo -->
 <img src="https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/google_android_root_0.png" align="left" hspace="1" vspace="1">
@@ -18,11 +18,12 @@ Growing popularity of Android mobile operating system has not only attracted use
 </br>
 <img align='left' height='50' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/networkx_logo_1.png' />
 <img align='right' height='30' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/logo2.png' />
-## ---Android Malware Graph Signature Creator---
+## ---Android Application Graph Signature Creator---
 
 <img align='center' height='60' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/Screenshot%202019-10-20%20at%209.52.48%20PM.png' />
+Applications in Android Store (or the App Store) are in billions. A user is not able to know whether it's a benign App or not. So to detect whether an Application is Benign or Malware it should be uniquely identified which are termed as signatures of the application.
 
-Android Malware are the malwares which have infected Android in many differet ways. Each malware have a different structure and executions. The malwares which behave similarly are categorised into a single Android Malware Family. The code is used to create signature of a particular Malware Family depending on the common sensitive API calls present in a particular MALWARE FAMILY. 
+Android Malware are the malwares which have infected Android in many differet ways. Each malware have a different structure and executions. The malwares which behave similarly are categorised into a single Android Malware Family. 
 
 ## API 
 APIs are a set of functions and procedures that allow for the creation of applications that access data and features of other applications, services or operating system. APIs makes it easier to develop a computer program by providing all the building blocks, which are then put together by the programmer. With an API, you really don’t know what’s going on behind the scenes. In other words, an API is the messenger that delivers your request to the provider that you’re requesting it from and then delivers the response back to you.
@@ -35,38 +36,24 @@ Android is divided into a layered architecture. Application  framework  layer  i
 ## Callgraphs
 
 
-## Wording
-Written in python ![Python](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f6e6574776f726b782e737667-2.svg). It's used to create a directed graph as a signature. The code has the followinf steps which it follows :-
+## Working
+Written in python ![Python](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f6e6574776f726b782e737667-2.svg). It's used to create a directed graph as a signature. The tool follows the following steps :-
 
 #### Step #1. Use Androguard to create a callgraph :
 ```gradle
 androguard cg 'Application Name'
 ```
+A callgraph.gml is created using the above command.
 
-The sensitive API calls of a particular application is collected with a help of a list which contains all the sensitive API's. While re
+#### Step #2. Create the signature :
+Run the Signatue_Creator.py through command line. The Signatue_Creator.py is used to gather the API, using the callgraph.gml created in Step 1. The callgraphs contains around thousands of API's, from these only sensitive API's and the API's calling them are collected and represented as a directed graph. Each graph is unique for the family they belong too.
+
+The sensitive API calls of a particular application is collected with a help of a list which contains all the sensitive API's names and is used to compare whther the API's are sensitive or not
 
 ```gradle
 sensitive_api=['TelephonyManager','SmsManager','LocationManager','AudioManager','HttpURLConnection','ConnectivityManager','BroadcastReceiver','Cipher','AccessibleObject','PackageManager']
 ```
 
-It's used to collect the sensitive API calls in the particular Malware Family and  the API's calling them. Representing the whole process as a directed graph so as to get the graphs as a signature to detect whether an Application belongs to a particular malware family or not.
-#### Step #1. Add the JitPack repository to your build file:
-
-```gradle
-allprojects {
-    repositories {
-	...
-	maven { url "https://jitpack.io" }
-    }
-}
-```
-
-#### Step #2. Add the dependency ([See latest release](https://jitpack.io/#jrvansuita/MaterialAbout)).
-
-```groovy
-dependencies {
-       compile 'com.github.jrvansuita:MaterialAbout:+'
-}
 ```
 # Implementation
 
