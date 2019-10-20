@@ -17,7 +17,6 @@ Growing popularity of Android mobile operating system has not only attracted use
 ![Networkx](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/networkx.svg)
 ![Matplotlib](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/matplotlib.svg)
 
-https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/matplotlib.svg
 </br>
 <a href='http://networkx.github.io'><img align='left' height='50' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/networkx_logo_1.png' /></a>
 
