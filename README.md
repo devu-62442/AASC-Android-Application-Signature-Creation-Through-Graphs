@@ -1,4 +1,4 @@
-# Android Malware Family Signature Creator
+# Android Malware-Family Graph Signature Creator
 
 <!-- Library Logo -->
 <img src="https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/google_android_root_0.png" align="left" hspace="1" vspace="1">
@@ -31,9 +31,16 @@ Android is divided into a layered architecture. Application  framework  layer  i
 
 ## Sensitive API
 
-```
+```gradle
 sensitive_api=['TelephonyManager','SmsManager','LocationManager','AudioManager','HttpURLConnection','ConnectivityManager','BroadcastReceiver','Cipher','AccessibleObject','PackageManager']
 ```
+## Callgraphs
+
+
+## Wording
+Written in python ![Python](https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f6e6574776f726b782e737667-2.svg). It's used to create a directed graph as a signature to detect whether an Android Application belongs to a particular malware family or not. 
+
+It's used to collect the sensitive API calls in the particular Malware Family and  the API's calling them. Representing the whole process as a directed graph so as to get the graphs as a signature to detect whether an Application belongs to a particular malware family or not.
 #### Step #1. Add the JitPack repository to your build file:
 
 ```gradle
