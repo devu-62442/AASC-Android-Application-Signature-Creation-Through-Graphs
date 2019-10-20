@@ -18,7 +18,7 @@ Growing popularity of Android mobile operating system has not only attracted use
 </br>
 <img align='left' height='50' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/networkx_logo_1.png' />
 <img align='right' height='30' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/logo2.png' />
-## --- Android Malware Family Signature Creator ---
+## ---Android Malware Family Signature Creator---
 
 <img align='center' height='60' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/Screenshot%202019-10-20%20at%207.48.32%20PM.png' />
 
