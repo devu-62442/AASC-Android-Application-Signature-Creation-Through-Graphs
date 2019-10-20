@@ -61,7 +61,7 @@ Run the ```Signatue_Creator.py``` through command line. The Signatue_Creator.py 
 python3 Signature_Creator.py
 ```
 
-<img align='center' height='700' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/Screenshot%202019-10-20%20at%2011.11.03%20PM.png' />
+<img align='center' height='720' src='https://github.com/devu-62442/Android_Application_Signature_Creator/blob/master/img/Screenshot%202019-10-21%20at%2012.10.12%20AM.png' />
 The sensitive API calls of a particular application is collected with a help of a list which contains all the sensitive API's names and is used to compare whther the API's are sensitive or not
 
 ```gradle
