@@ -35,7 +35,25 @@ APIs are a set of functions and procedures that allow for the creation of applic
 Android is divided into a layered architecture. Application  framework  layer  is  on  top  of  native library layer. The application layer provides major Application  programming  interface  (APIs)  and higher-level services in the form of java classes. The application developers are allowed to access all the APIs framework  for  the  core  programs that  make simpler the reuse of APIs components. These APIs are open to everybody to create android applications. There is different type  of application  components. Each type has a different lifecycle and purpose that describes how the  component  will be  created and destroyed. Frameworks in the Application Framework layer are written in Java and provide abstractions of the underlying native libraries and Dalvik capabilities to applications. Android applications run in their own sandboxed Dalvik VM and can consist of multiple components: Activities, services, broadcast receivers and content providers etc. Components can interact with other components of the same or a different application via intents. 
 
 ## Sensitive API
+There is no definite defination for Sensitive APIs. Sensitive API's are the API's which handles the sensitive information in Android Devices. Now the sensitive information can be personal information rendering, it can be reading of databases, it can be sensing and receiving sms etc. 
 
+In this tool the Sensitive API's are the set of APIs which are used to access ```Sensitive Resources``` on the Android Device. Sensitive Resources such as Devce ID of the Application, Location of the user, getting the information about Network Type.
+
+There are 10 API classes used as Sensitive API classes. All these API classes will have different API methods which are used to detect the malicious behaviour in an Application.
+
+E.g.-
+- Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener; I)V
+- Landroid/telephony/TelephonyManager;->getNetworkType()I
+- Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
+- Landroid/content/pm/PackageManager;->isSafeMode()Z
+    
+In the above examples ```TelephonyManager, ConnectivityManager, PackageManager``` are the API classes and ```listen(), getNetworkType(), getActiveNetworkInfo(), isSafeMode()``` are the API Methods.
+
+The Tool uses the following Sensitive APIs Classes -
+
+![SensitiveAPIList](https://github.com/devu-62442/Extracting-Sensitive-API-Calls/blob/master/img/Screenshot%202019-10-22%20at%207.31.00%20PM.png)
+
+These classes are used to give the list of all Sensitive API calls as an output.
 
 ## Callgraphs
 A call graph (also known as a call multigraph) is a control flow graph, which represents calling relationships between API's in an Android Application. Each node represents an API and each edge (f, g) indicates that API a calls API b. Call graphs can be dynamic or static.A dynamic call graph is a record of an execution of the Android Application. Thus, a dynamic call graph can be exact, but only describes one run of the application. A static call graph is a call graph intended to represent every possible execution of the Android Application.
