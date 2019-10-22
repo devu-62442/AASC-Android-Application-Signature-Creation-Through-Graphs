@@ -88,3 +88,5 @@ sensitive_api=['TelephonyManager','SmsManager','LocationManager','AudioManager',
 ```A graph is created, displayed on the screen and saved as Signature.gml```
 </br>
 <img align='center' height='500' src='https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/Screenshot%202019-10-20%20at%2011.11.49%20PM.png' />
+
+Using this on multiple applications and finding the similarities can be used to generate signature of a particular Malware Family.
