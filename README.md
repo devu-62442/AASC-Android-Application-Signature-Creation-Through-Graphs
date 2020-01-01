@@ -1,4 +1,4 @@
-# Android Application Graph Signature 
+# AASC: Android Application Signature Creation  Through Graphs
 
 <!-- Library Logo -->
 <img src="https://github.com/devu-62442/Android_Malware_Signature_Creator/blob/master/img/google_android_root_0.png" align="left" hspace="1" vspace="1">
