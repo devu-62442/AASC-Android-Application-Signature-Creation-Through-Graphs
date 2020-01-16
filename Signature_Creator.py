@@ -1,5 +1,5 @@
 #Android Application Graph Signature 
-# © Created By - Devyani Vij and Riya Khan
+# © Created By - Devyani Vij
 #Header Files
 import optparse
 import networkx as nx
