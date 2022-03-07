@@ -6,7 +6,7 @@
 <img align="right" height='50' src='https://raw.githubusercontent.com/devu-62442/AASC-Android-Application-Signature-Creation-Through-Graphs/master/img/dims.jpeg' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## Android 
-[**Android**](https://developer.android.com) is a Linux based operating system it is designed primarily for touch screen mobile devices such as smartphones and tablet computers. One of the most widely used mobile OS these days is android. The android is software that was founded in Palo Alto of California in 2003. As of May 2017, it has over 2 billion monthly active users, the largest installed base of any operating system, and as of December 2018, the Google Play store features over 2.6 million apps.
+[**Android**](https://developer.android.com) is a Linux based operating system it is designed primarily for touch screen mobile devices such as smartphones and tablet computers. One of the most widely used mobile OS these days is android. The android is software that was founded in Palo Alto of California in 2003. As of May 2017, it has over 2 billion monthly active users, the largest installed base of any operating system, and as of December 2018, the Google Play store features over 2.6 million applications.
 
 Growing popularity of Android mobile operating system has not only attracted user community but also the malware developers towards this platform. Large number of malicious apps have been detected in the past years in Google Play Store and third party app markets.
 </br>
